@@ -2,7 +2,7 @@
   <div class="col-xs-12 col-sm-4">
     <div class="list-group">
       <a
-        [routerLink]="['/servers', 5, 'edit']"
+        [routerLink]="['/servers', servers.id]"
         [queryParams]="{allowEdit: '1', serverStaus: 'on'}"
         fragment="loading"
         href="#"
