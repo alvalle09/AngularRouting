@@ -2,7 +2,6 @@
   <div class="col-xs-12 col-sm-4">
     <div class="list-group">
       <a
-      
         [routerLink]="['/servers', server.id ]"
         [queryParams]="{allowEdit: '1', serverStaus: 'on'}"
         fragment="loading"
@@ -14,9 +13,10 @@
     </div>
   </div>
   <div class="col-xs-12 col-sm-4">
-    <button class="btn btn-primary" (click)="onReload()">Reload Page</button>
+    <router-outlet></router-outlet>
+    <!-- <button class="btn btn-primary" (click)="onReload()">Reload Page</button>
     <app-edit-server></app-edit-server>
-    <hr>
+    <hr> -->
     <!-- we can't load app-server component until an id has been assigned -->
     <!-- <app-server></app-server> -->
   </div>
